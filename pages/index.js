@@ -184,11 +184,8 @@ const Index = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="w-full sm:w-auto bg-gradient-to-r from-amber-500 to-amber-600 text-black px-8 py-4 rounded-full font-bold text-lg hover:from-amber-600 hover:to-amber-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button onClick={() => {document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });}} className="w-full sm:w-auto bg-gradient-to-r from-amber-500 to-amber-600 text-black px-8 py-4 rounded-full font-bold text-lg hover:from-amber-600 hover:to-amber-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
               Book Appointment
-            </button>
-            <button className="w-full sm:w-auto border-2 border-amber-500 text-amber-500 px-8 py-4 rounded-full font-bold text-lg hover:bg-amber-500 hover:text-black transition-all duration-300">
-              View Services
             </button>
           </div>
         </div>
